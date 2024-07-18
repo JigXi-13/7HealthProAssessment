@@ -3,16 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Error from "./components/Error";
 import BlogPostList from "./components/BlogPostList";
 import BlogPostDetails from "./components/BlogPostDetails";
+import Error from "./components/Error";
+import BlogsProvider from "./context/BlogsProvider";
 
 const AppLayout = () => {
   return (
     <React.Fragment>
-      {/* we can define Header over here! */}
-      <Outlet />
-      {/* we can define Footer over here! */}
+      <BlogsProvider>
+        {/* we can define Header over here! */}
+        <Outlet />
+        {/* we can define Footer over here! */}
+      </BlogsProvider>
     </React.Fragment>
   );
 };
@@ -35,7 +38,7 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 //Providing router configuration(appRouter) to the AppLayout
 root.render(<RouterProvider router={appRouter} />);
