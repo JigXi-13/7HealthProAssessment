@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+// @ts-ignore
 import axios from "axios";
 import BlogPostItem from "./BlogPostItem";
 
