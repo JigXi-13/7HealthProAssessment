@@ -5,16 +5,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-
-const formatDate = (timestamp: string) => {
-  const date = new Date(timestamp);
-  const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-  return date.toLocaleDateString(undefined, options);
-};
+// @ts-ignore
+import { formatDate } from "../utils/helper";
 
 interface FeaturedPostProps {
   post: {

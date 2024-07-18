@@ -10,6 +10,8 @@ import Pagination from "@mui/material/Pagination";
 import { Link } from "react-router-dom";
 import { BlogState } from "../context/BlogsProvider";
 import ShimmerUI from "./ShimmerUI";
+// @ts-ignore
+import { API_KEY } from "../utils/constant";
 
 function BlogPostList() {
   const [loading, setLoading] = useState(true);
@@ -37,7 +39,7 @@ function BlogPostList() {
         `https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&pageSize=${PAGE_SIZE}&page=${page}`,
         {
           headers: {
-            Authorization: `c06f9c3e988c49059622c6ef7ffbf159`,
+            Authorization: API_KEY,
           },
         }
       );
