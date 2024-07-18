@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/7HealthProAssessment/static/css/main.038a1c02.css",
+    "main.js": "/7HealthProAssessment/static/js/main.5d0c64f4.js",
+    "index.html": "/7HealthProAssessment/index.html",
+    "main.038a1c02.css.map": "/7HealthProAssessment/static/css/main.038a1c02.css.map",
+    "main.5d0c64f4.js.map": "/7HealthProAssessment/static/js/main.5d0c64f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.038a1c02.css",
+    "static/js/main.5d0c64f4.js"
+  ]
+}
